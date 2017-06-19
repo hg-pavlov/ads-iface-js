@@ -1,0 +1,1743 @@
+
+body {
+	margin:0;
+	text-align:center;
+	background-color:#FCF6F6;
+}
+div {
+	padding:10px;
+	margin:0;
+	color:#444;
+	font-size:20px;
+	box-sizing:border-box;
+	display:inline-block;
+}
+img {
+	margin:10px;
+	vertical-align:top;
+}
+input {
+	box-sizing:border-box;
+}
+
+
+
+div.progress_background {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:4em;
+	background-color:rgba(77,55,55,.9);
+	color:#FFF;
+	z-index:100;
+}
+
+
+
+
+div.navigation_panel {
+	margin:0;
+	padding:0;
+	padding-top:10px;
+	width:100%;
+	text-align:center;
+/*	background-color:rgba(206,99,9,1); */
+	background-color:rgba(245,118,12,1);
+}
+
+div.navigation_btn {
+	margin:0;
+	margin-left:0px;
+	margin-right:0px;
+	padding:30px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	cursor:pointer;
+}
+div.navigation_btn_selected {
+	margin:0;
+	margin-left:0px;
+	margin-right:0px;
+	padding:30px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	background-color:#932626;
+}
+
+img.navigation_img {
+	cursor:pointer;
+}
+
+
+
+
+
+div.page_info {
+	margin:0;
+	padding:20px;
+	padding-top:40px;
+	padding-bottom:40px;
+	width:100%;
+	background-color:#932626;
+}
+div.outlet_device_name {
+	margin:0;
+	margin-top:80px;
+	margin-bottom:80px;
+	width:100%;
+	padding:10px;
+	border:solid 1px #777;
+	border-radius:20px;
+	font-size:40px;
+	background-color:#FFFFFF;
+	cursor:pointer;
+}
+div.outlet_ctl {
+	margin-top:10px;
+	border:solid 2px #CFCBCB;
+	border-radius:0px;
+	padding-left:50px;
+	padding-right:50px;
+	text-align:center;
+	background-color:#FBFCEE;
+}
+div.outlet_num {
+	margin:10px;
+	vertical-align:top;
+	font-size:60px;
+	font-style:italic;
+	font-weight:bold;
+	color:#000;
+}
+div.outlet_name {
+	margin:0;
+	margin-top:10px;
+	margin-bottom:20px;
+	font-size:50px;
+	font-style:italic;
+	font-weight:bold;
+	color:#92350A;
+	width:100%;
+}
+
+div.no_outlets {
+}
+
+img.outlet_toggle {
+	cursor:pointer;
+}
+img.outlet_cfg {
+	float:right;
+	cursor:pointer;
+}
+
+
+div.outlet_config_page {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:20px;
+	width:100%;
+	height:100%;
+	color:#FFF;
+/*	background-color:rgba(206,99,9,1); */
+	background-color:rgba(245,118,12,1);
+	font-size:40px;
+	overflow-y:auto;
+	z-index:100;
+}
+div.outlet_conf_header {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+	color:#FFF;
+}
+div.outlet_name_edit {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	font-size:40px;
+	text-align:center;
+	color:#444;
+	background-color:#FFF;
+	border-radius:10px;
+	cursor:pointer;
+}
+select.outlet_consumer {
+	margin:0;
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+	padding:4px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:30px;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+}
+div.outlet_rule_list {
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+}
+div.outlet_rule_element {
+	position:relative;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	color:#222;
+	background-color:#F3C48F;
+	font-size:20px;
+	font-style:normal;
+	font-weight:bold;
+	text-align:left;
+}
+div.outlet_rule_control {
+	position:absolute;
+	top:0;
+	right:0;
+	padding:0;
+	margin:0;
+}
+div.outlet_rule_edit {
+	margin:0;
+	margin-left:10px;
+	margin-right:10px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:40px;
+	font-weight:bold;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	background-color:#0404D8;
+	color:#FFF;
+	cursor:pointer;
+}
+div.outlet_rule_delete {
+	margin:0;
+	margin-left:10px;
+	margin-right:10px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:40px;
+	font-weight:bold;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	background-color:#D80404;
+	color:#FFF;
+	cursor:pointer;
+}
+div.outlet_rule_form {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:10px;
+	width:100%;
+	height:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	color:#222;
+	background-color:#F3C48F;
+	font-size:20px;
+	font-style:normal;
+	font-weight:bold;
+	text-align:center;
+	overflow-y:auto;
+	z-index:100;
+}
+div.outlet_rule_header {
+	position:relative;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:40px;
+	width:100%;
+	padding:10px;
+	font-size:30px;
+	text-align:center;
+}
+div.outlet_rule_datetime_block {
+	width:100%;
+	margin:0;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:20px;
+	border:solid 2px #FFF;
+	border-radius:10px;
+}
+div.outlet_rule_datetime_container {
+	width:100%;
+	margin:0;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:0px;
+	border:solid 1px #FFF;
+	border-radius:10px;
+	font-size:30px;
+}
+div.outlet_rule_datetime_value {
+	margin:10px;
+	padding:10px;
+	border:solid 1px #DECEAB;
+	border-radius:10px;
+	background-color:#F5F8E5;
+	vertical-align:middle;
+	cursor:pointer;
+}
+div.outlet_rule_datetime_value_val {
+	margin:4px;
+	font-size:28px;
+	font-weight:bold;
+	color:#333;
+}
+div.outlet_rule_weekdays_container {
+	width:100%;
+	margin:0;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:20px;
+	border:solid 1px #FFF;
+	border-radius:10px;
+	font-size:30px;
+}
+div.outlet_rule_weekday_container {
+	margin:0;
+	margin-left:4px;
+	margin-right:4px;
+}
+div.outlet_rule_weekday_button_on {
+	margin:0px;
+	margin-top:10px;
+	padding:10px;
+	width:4em;
+	border:solid 2px #FFF;
+	font-size:20px;
+	border-radius:16px;
+	background-color:rgba(30,164,4,1);
+	color:#FFF;
+	cursor:pointer;
+}
+div.outlet_rule_weekday_button_off {
+	margin:0px;
+	margin-top:10px;
+	padding:10px;
+	width:4em;
+	border:solid 2px #FFF;
+	font-size:20px;
+	border-radius:16px;
+	background-color:#D80404;
+	color:#FFF;
+	cursor:pointer;
+}
+div.outlet_rule_condition_list_container_on {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#F06F45;
+}
+div.outlet_rule_condition_list_container_off {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#CCCAC9;
+}
+div.outlet_rule_condition_list_header_on {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	color:#FFF;
+}
+div.outlet_rule_condition_list_header_off {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	color:#444;
+}
+div.outlet_rule_condition_list {
+	margin:0;
+	margin-top:0px;
+	margin-bottom:20px;
+	padding:10px;
+	width:100%;
+	border:solid 2px #B2B2B2;
+	border-radius:10px;
+	background-color:#EFEFEF;
+}
+div.outlet_rule_condition {
+	position:relative;
+	width:100%;
+	margin:0;
+	margin-top:8px;
+	margin-bottom:8px;
+	padding:4px;
+	padding-top:14px;
+	padding-bottom:14px;
+	font-size:20px;
+	font-weight:bold;
+	color:#222;
+	text-align:left;
+	border:solid 2px #AAA;
+	border-radius:10px;
+	background-color:#FFF;
+}
+div.outlet_rule_condition_ctl {
+	position:absolute;
+	top:0;
+	right:0;
+	margin:0;
+	padding:0;
+}
+div.outlet_rule_condition_ctl_edit {
+	padding:10px;
+	padding-left:16px;
+	padding-right:16px;
+	margin:4px;
+	margin-left:10px;
+	margin-right:10px;
+	font-size:20px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	background-color:#0404D8;
+	color:#FFF;
+	cursor:pointer;
+}
+div.outlet_rule_condition_ctl_delete {
+	padding:10px;
+	padding-left:16px;
+	padding-right:16px;
+	margin:4px;
+	margin-left:10px;
+	margin-right:10px;
+	font-size:20px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	background-color:#D80404;
+	color:#FFF;
+	cursor:pointer;
+}
+div.outlet_rule_condition_value {
+	margin:0;
+	padding:4px;
+	font-size:20px;
+	font-weight:bold;
+	color:#444;
+}
+div.outlet_condition_header {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:100%;
+	padding:10px;
+	font-size:24px;
+	text-align:center;
+	color:#333;
+}
+div.outlet_rule_condition_form {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:10px;
+	width:100%;
+	height:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	color:#222;
+	background-color:#F3C48F;
+	font-size:20px;
+	font-style:normal;
+	font-weight:bold;
+	text-align:center;
+	overflow-y:auto;
+	z-index:100;
+}
+div.outlet_rule_condition_form_close {
+	position:absolute;
+	top:0;
+	right:0;
+	margin:0;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:40px;
+	font-weight:bold;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	background-color:#222;
+	color:#FFF;
+	cursor:pointer;
+}
+div.outlet_rule_condition_sensor {
+	width:100%;
+	margin:0;
+	margin-top:40px;
+	margin-bottom:20px;
+	padding:40px;
+	border:solid 2px #FFF;
+	border-radius:10px;
+}
+select.outlet_rule_condition_alg {
+	margin:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+}
+select.outlet_rule_condition_sensorlist {
+	margin:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+}
+select.outlet_rule_condition_sensortype {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+}
+select.outlet_rule_condition_relation {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+}
+select.outlet_rule_condition_hh {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+}
+select.outlet_rule_condition_mm {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+}
+select.outlet_rule_condition_logic_val {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+}
+input.outlet_rule_condition_value {
+	width:10em;
+	margin:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:4px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+	cursor:pointer;
+}
+img.outlet_rule_condition_value_img {
+	vertical-align:middle;
+}
+div.outlet_rule_condition_value_container {
+	margin:4px;
+	padding:10px;
+	border:solid 2px #FFF;
+	border-radius:10px;
+}
+div.outlet_rule_condition_values {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:40px;
+	padding:40px;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	font-size:40px;
+	font-weight:bold;
+	color:#111;
+}
+div.outlet_condition_units {
+	margin:4px;
+	font-size:30px;
+	font-weight:bold;
+}
+
+
+div.btn_close_corner {
+	position:absolute;
+	top:0;
+	right:0;
+	margin:0;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:40px;
+	font-weight:bold;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	background-color:#222;
+	color:#FFF;
+	cursor:pointer;
+}
+div.outlet_rule_form_close {
+	position:absolute;
+	top:0;
+	right:0;
+	margin:0;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	padding:10px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:40px;
+	font-weight:bold;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	background-color:#222;
+	color:#FFF;
+	cursor:pointer;
+}
+
+div.outlet_btn_add {
+	font-size:40px;
+	font-weight:bold;
+	margin:20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:rgba(30,164,4,1);
+	color:#FFF;
+}
+
+
+
+
+
+
+
+
+
+div.sensor_device_name {
+	margin:0;
+	margin-top:80px;
+	margin-bottom:80px;
+	width:100%;
+	padding:10px;
+	border:solid 1px #777;
+	border-radius:20px;
+	font-size:40px;
+	background-color:#FFFFFF;
+	cursor:pointer;
+}
+div.sensor_device_id {
+	margin:0;
+	margin-top:0px;
+	margin-bottom:10px;
+	width:100%;
+	padding:10px;
+	border:solid 1px #777;
+	font-size:40px;
+	background-color:#FFFFFF;
+}
+
+div.sensor_block_datetime {
+	margin:0;
+	margin-top:4px;
+	margin-bottom:4px;
+	padding:20px;
+	width:100%;
+	background-color:#FEFEFE;
+}
+div.sensor_block_digital {
+	margin:0;
+	margin-top:4px;
+	margin-bottom:4px;
+	padding:20px;
+	width:100%;
+	background-color:#FEFEFE;
+}
+div.sensor_block_digital_id {
+	margin:0;
+	margin-top:4px;
+	margin-bottom:4px;
+	padding:20px;
+	width:100%;
+	border:solid 1px #ECC4EE;
+	border-radius:10px;
+	background-color:#FEFEFE;
+}
+div.sensor_block_analog {
+	margin:0;
+	margin-top:4px;
+	margin-bottom:4px;
+	padding:20px;
+	width:100%;
+	background-color:#FEFEFE;
+}
+div.sensor_block_logic {
+	margin:0;
+	margin-top:4px;
+	margin-bottom:4px;
+	padding:20px;
+	width:100%;
+	background-color:#FEFEFE;
+}
+div.sensor_block_header {
+	margin:0;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:20px;
+	font-size:30px;
+	font-weight:bold;
+}
+img.sensor_config_img {
+	margin:50px;
+	margin-top:0px;
+	cursor:pointer;
+}
+
+
+div.sensor_datetime_value {
+	margin:10px;
+	padding:10px;
+	border:solid 1px #DECEAB;
+	border-radius:10px;
+	background-color:#F5F8E5;
+	cursor:pointer;
+}
+img.sensor_datetime_value_img {
+}
+div.sensor_datetime_value_val {
+	margin:4px;
+	font-size:28px;
+	font-weight:bold;
+	color:#333;
+}
+div.sensor_digital_value {
+	margin:8px;
+	padding:10px;
+	border:solid 1px #DECEAB;
+	border-radius:10px;
+	background-color:#EFEFCE;
+}
+img.sensor_digital_value_img {
+}
+div.sensor_digital_value_val {
+	margin:4px;
+	font-size:28px;
+	font-weight:bold;
+	color:#333;
+}
+div.sensor_digital_name {
+	width:100%;
+	margin:0;
+	margin-top:10px;
+	margin-bottom:40px;
+	padding:20px;
+	font-size:30px;
+	border:solid 1px #777;
+	border-radius:10px;
+	background-color:#FBFAD0;
+	cursor:pointer;
+	text-align:center;
+}
+div.sensor_analog_value {
+	margin:8px;
+	padding:10px;
+	border:solid 1px #DECEAB;
+	border-radius:10px;
+	background-color:#F5F8E5;
+	cursor:pointer;
+}
+div.sensor_analog_value_num {
+	padding:10px;
+	border:solid 1px #98CC2F;
+	border-radius:10px;
+	background-color:#FEFEFE;
+	color:#111;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+}
+div.sensor_analog_value_name {
+}
+img.sensor_analog_value_img {
+}
+div.sensor_analog_value_val {
+	margin:4px;
+	font-size:28px;
+	font-weight:bold;
+	color:#333;
+}
+div.sensor_logic_value {
+	margin:8px;
+	padding:10px;
+	border:solid 1px #DECEAB;
+	border-radius:10px;
+	background-color:#EFEFCE;
+}
+div.sensor_logic_value_num {
+	padding:10px;
+	border:solid 1px #98CC2F;
+	border-radius:10px;
+	background-color:#FEFEFE;
+	color:#111;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+}
+div.sensor_logic_value_name {
+}
+img.sensor_logic_value_img {
+	margin-top:0px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:10px;
+}
+div.sensor_logic_value_val {
+	margin:4px;
+	font-size:20px;
+	font-weight:bold;
+	color:#333;
+}
+
+
+
+
+
+
+div.sensor_analog_editor {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:20px;
+	width:100%;
+	height:100%;
+	color:#FFF;
+/*	background-color:rgba(206,99,9,1); */
+	background-color:rgba(245,118,12,1);
+	font-size:40px;
+	overflow-y:auto;
+	z-index:100;
+}
+div.sensor_analog_editor_header {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	font-size:40px;
+	text-align:center;
+	color:#444;
+	background-color:#FFF;
+	border-radius:10px;
+}
+div.sensor_analog_pin_form {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#F3C48F;
+	font-size:20px;
+	font-style:italic;
+	font-weight:bold;
+	color:#222;
+}
+div.sensor_analog_pin_num {
+	margin:0;
+	margin-left:20px;
+	margin-right:20px;
+	padding:10px;
+	border:solid 1px #98CC2F;
+	border-radius:10px;
+	background-color:#FEFEFE;
+	color:#111;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+}
+select.sensor_analog_pin_type {
+	margin:0;
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+	padding:4px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:30px;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+}
+select.sensor_analog_pin_temp_comp {
+	margin:0;
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:20px;
+	padding:4px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:30px;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+}
+input.sensor_analog_pin_name {
+	margin:0;
+	margin-top:10px;
+	width:100%;
+	padding:10px;
+	font-size:30px;
+	text-align:center;
+}
+input.sensor_analog_pin_distance {
+	margin:0;
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	width:3em;
+	padding:10px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+input.sensor_analog_pin_ppm_conv_factor {
+	margin:0;
+	margin-top:10px;
+	margin-left:20px;
+	margin-right:20px;
+	padding:10px;
+	width:5em;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+
+
+
+
+
+div.editor {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:20px;
+	width:100%;
+	height:100%;
+	color:#FFF;
+/*	background-color:rgba(206,99,9,1); */
+	background-color:rgba(245,118,12,1);
+	font-size:40px;
+	overflow-y:auto;
+	z-index:100;
+}
+div.editor_header {
+	width:100%;
+	margin:0;
+	margin-top:80px;
+	margin-bottom:40px;
+	padding:20px;
+	font-size:40px;
+	text-align:center;
+	color:#FFF;
+}
+input.editor_name {
+	width:100%;
+	margin:0;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	border:solid 4px #ECECEC;
+	border-radius:20px;
+	font-size:40px;
+	text-align:center;
+}
+
+select.editor_tz {
+	margin:10px;
+	padding:10px;
+	font-size:40px;
+	font-style:italic;
+	font-weight:bold;
+}
+select.editor_hh {
+	margin:10px;
+	padding:10px;
+	font-size:40px;
+	font-style:italic;
+	font-weight:bold;
+}
+select.editor_mm {
+	margin:10px;
+	padding:10px;
+	font-size:40px;
+	font-style:italic;
+	font-weight:bold;
+}
+
+
+
+
+
+
+div.sensor_logic_editor {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:20px;
+	width:100%;
+	height:100%;
+	color:#FFF;
+/*	background-color:rgba(206,99,9,1); */
+	background-color:rgba(245,118,12,1);
+	font-size:40px;
+	overflow-y:auto;
+	z-index:100;
+}
+div.sensor_logic_editor_header {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	font-size:40px;
+	text-align:center;
+	color:#444;
+	background-color:#FFF;
+	border-radius:10px;
+}
+div.sensor_logic_pin_form {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#F3C48F;
+	font-size:20px;
+	font-style:italic;
+	font-weight:bold;
+	color:#222;
+}
+div.sensor_logic_pin_num {
+	margin:0;
+	margin-left:20px;
+	margin-right:20px;
+	padding:10px;
+	border:solid 1px #98CC2F;
+	border-radius:10px;
+	background-color:#FEFEFE;
+	color:#111;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+}
+div.sensor_logic_pin_disabled {
+	padding:10px;
+	margin:10px;
+	width:6em;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#D84210;
+	color:#FFF;
+	cursor:pointer;
+}
+div.sensor_logic_pin_enabled {
+	padding:10px;
+	margin:10px;
+	width:6em;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#1C9B1C;
+	color:#FFF;
+	cursor:pointer;
+}
+input.sensor_logic_pin_name {
+	margin:0;
+	margin-top:10px;
+	width:100%;
+	padding:10px;
+	font-size:30px;
+	text-align:center;
+}
+
+
+
+
+div.sensor_calibr_editor {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:20px;
+	width:100%;
+	height:100%;
+	color:#FFF;
+/*	background-color:rgba(206,99,9,1); */
+	background-color:rgba(245,118,12,1);
+	font-size:40px;
+	overflow-y:auto;
+	z-index:100;
+}
+div.sensor_calibr_editor_header {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	font-size:40px;
+	text-align:center;
+	color:#444;
+	background-color:#FFF;
+	border-radius:10px;
+}
+div.sensor_calibr_editor_form {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-top:40px;
+	padding-bottom:40px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#F3C48F;
+	font-size:20px;
+	font-style:italic;
+	font-weight:bold;
+	color:#222;
+}
+input.sensor_calibr_value {
+	margin:10px;
+	padding:10px;
+	width:10em;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+
+
+
+div.btn_save {
+	font-size:40px;
+	font-weight:bold;
+	margin:20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:rgba(30,164,4,1);
+	color:#FFF;
+}
+div.btn_close {
+	font-size:40px;
+	font-weight:bold;
+	margin:20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:rgba(234,37,4,1);
+	color:#FFF;
+}
+div.btn_cancel {
+	font-size:40px;
+	font-weight:bold;
+	margin:20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:rgba(234,37,4,1);
+	color:#FFF;
+}
+div.btn_add_value {
+	font-size:30px;
+	font-weight:bold;
+	margin:20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:rgba(30,164,4,1);
+	color:#FFF;
+}
+div.btn_reset {
+	font-size:30px;
+	font-weight:bold;
+	margin:20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:rgba(234,37,4,1);
+	color:#FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CALENDAR */
+div.calendar_bg {
+	position:fixed;
+	width:100%;
+	height:100%;
+	margin:0;
+	left:0;
+	top:0;
+	background-color:rgba(236, 137, 9, 1);
+	overflow-y:auto;
+	box-sizing:border-box;
+	z-index:120;
+}
+div.calendar_name {
+	width:100%;
+	font-size:30px;
+	margin:0;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	box-sizing:border-box;
+}
+div.calendar_container {
+	width:100%;
+	max-width:800px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#F2AB65;
+	box-sizing:border-box;
+}
+div.calendar_button {
+	font-size:40px;
+	font-weight:bold;
+	margin:20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:rgba(234,37,4,1);
+	color:#FFF;
+}
+div.calendar_button:hover {
+	background-color:rgba(234,37,4,1);
+}
+
+table.calendar {
+	width:100%;
+	margin:10px;
+	box-sizing:border-box;
+}
+td.calendar_wnum {
+	padding:10px;
+	width:80px;
+	height:40px;
+	text-align:center;
+	border:solid 2px #FEFEFE;
+}
+td.calendar_wday {
+	padding:10px;
+	width:60px;
+	height:40px;
+	text-align:center;
+	border:solid 2px #FEFEFE;
+}
+td.calendar_wday_now {
+	padding:10px;
+	width:60px;
+	height:40px;
+	text-align:center;
+	border:solid 2px #FEFEFE;
+	background-color:rgb(196,228,255);
+}
+td.calendar_day {
+	padding:10px;
+	width:60px;
+	height:40px;
+	text-align:right;
+	border:solid 2px #DEDEDE;
+	border-radius:10px;
+	background-color:#FFFFCC;
+	cursor:pointer;
+}
+td.calendar_day:hover {
+	border:solid 2px #8888A7;
+	background-color:#FFF;
+	box-shadow:8 8 18px #444;
+}
+td.calendar_day_now {
+	padding:10px;
+	width:60px;
+	height:40px;
+	text-align:right;
+	border:solid 2px #DECCCC;
+	border-radius:0px;
+	background-color:#FFC9C9;
+	font-size:30px;
+	font-weight:bold;
+	color:#000;
+	cursor:pointer;
+}
+td.calendar_day_now:hover {
+	border:solid 2px #8888A7;
+	background-color:#FFF;
+	box-shadow:8 8 1em gold;
+}
+tr.calendar_space {
+	height:20px;
+}
+tr.calendar_header {
+	background-color:#FFF;
+}
+
+td.calendar_year_prev {
+	padding:10px;
+	font-size:30px;
+	font-weight:normal;
+	text-align:left;
+	border-radius:10px;
+	cursor:pointer;
+}
+td.calendar_year_prev:hover {
+	font-weight:bold;
+}
+td.calendar_year_next {
+	padding:10px;
+	font-size:30px;
+	font-weight:normal;
+	text-align:right;
+	border-radius:10px;
+	cursor:pointer;
+}
+td.calendar_year_next:hover {
+	font-weight:bold;
+}
+td.calendar_year_name {
+	padding:10px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+td.calendar_month_prev {
+	padding:10px;
+	font-size:30px;
+	font-weight:normal;
+	text-align:left;
+	border-radius:10px;
+	cursor:pointer;
+}
+td.calendar_month_prev:hover {
+	font-weight:bold;
+}
+td.calendar_month_next {
+	padding:10px;
+	font-size:30px;
+	font-weight:normal;
+	text-align:right;
+	border-radius:10px;
+	cursor:pointer;
+}
+td.calendar_month_next:hover {
+	font-weight:bold;
+}
+td.calendar_month_name {
+	padding:10px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+
+
+
+div.mode_switcher {
+	width:100%;
+	margin:0px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:0px;
+}
+div.mode_switcher_left {
+	width:200px;
+	margin:0;
+	padding:20px;
+	font-size:30px;
+	font-style:italic;
+	font-weight:bold;
+	border:solid 3px #EEE;
+	border-radius:0px;
+	border-top-left-radius:30px;
+	border-bottom-left-radius:30px;
+	background-color:#FFF;
+	box-shadow:inset 0px -16px 18px 2px #DDD, inset 4px 36px 28px 18px #FFF;
+	cursor:pointer;
+	color:#444;
+	text-align:center;
+}
+div.mode_switcher_left:hover {
+	border-right:solid 3px #FFF;
+	color:#000;
+	background-color:#64AB0D;
+	box-shadow:inset 0px -21px 22px 2px #54980D, inset 4px 30px 19px 10px #88FF88;
+}
+div.toggle_mode_name {
+	width:10em;
+	max-width:280px;
+	margin:0;
+	padding:20px;
+	font-size:30px;
+	font-weight:bold;
+	border:0;
+	border-top:solid 3px #EEE;
+	border-bottom:solid 3px #EEE;
+	background-color:#FFF;
+	box-shadow:inset 0px 2px 4px 2px #888;
+	color:#222;
+	text-align:center;
+}
+div.mode_switcher_right {
+	width:200px;
+	margin:0;
+	padding:20px;
+	font-size:30px;
+	font-style:italic;
+	font-weight:bold;
+	border:solid 3px #EEE;
+	border-radius:0px;
+	border-top-right-radius:30px;
+	border-bottom-right-radius:30px;
+	background-color:#FFF;
+	box-shadow:inset 0px -16px 18px 2px #DDD, inset 4px 36px 28px 18px #FFF;
+	cursor:pointer;
+	color:#444;
+	text-align:center;
+}
+div.mode_switcher_right:hover {
+	border-left:solid 3px #FFF;
+	color:#000;
+	background-color:#64AB0D;
+	box-shadow:inset 0px -21px 22px 2px #54980D, inset 4px 30px 19px 10px #88FF88;
+}
+
+div.toggle_btn_active {
+	color:#444;
+	background-color:#FFF;
+	box-shadow:inset 0px 1px 2px 2px #888;
+}
+div.toggle_btn_inactive {
+	color:#000;
+	background-color:#64AB0D;
+	box-shadow:inset 0px -16px 18px 2px #49CF19, inset 4px 36px 28px 18px #C8F277;
+}
+
+
+
+div.system_header {
+	width:100%;
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	font-size:30px;
+	font-style:italic;
+	font-weight:bold;
+	text-align:center;
+	color:#FFF;
+}
+div.system_ctl_container {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:0px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#EC5519;
+}
+div.system_autonomus_container {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	padding-top:40px;
+	padding-bottom:40px;
+	width:100%;
+}
+div.system_controller_container {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	padding-top:40px;
+	padding-bottom:40px;
+	width:100%;
+	border:0;
+	border-top:solid 2px #FFF;
+	border-bottom:solid 2px #FFF;
+}
+div.system_controller_name {
+	margin:0;
+	margin-top:40px;
+	margin-bottom:80px;
+	width:100%;
+	padding:10px;
+	border:solid 1px #777;
+	border-radius:20px;
+	font-size:40px;
+	background-color:#FFFFFF;
+	cursor:pointer;
+}
+div.system_interface_container {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	padding-top:40px;
+	padding-bottom:40px;
+	width:100%;
+	border:0;
+}
+input.select_interface {
+	width:100%;
+	margin:0;
+	margin-top:40px;
+	margin-bottom:40px;
+	font-size:30px;
+	background-color:#FFF;
+	padding:10px;
+	border:solid 1px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	text-align:center;
+}
+
+div.system_wifi_container {
+	margin:0;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:20px;
+	padding-top:40px;
+	padding-bottom:40px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	background-color:#F0B2AB;
+}
+select.system_wifi_mode {
+	margin:0;
+	margin-top:10px;
+	margin-bottom:20px;
+	padding:4px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:30px;
+	font-weight:normal;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+}
+input.wifi_input {
+	margin:0px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding:10px;
+	width:100%;
+	border:solid 2px #FFF;
+	border-radius:10px;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+div.system_info_container {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:0;
+	padding:20px;
+	width:100%;
+	height:100%;
+	color:#FFF;
+	background-color:#333;
+	border:solid 2px #FFF;
+	font-size:30px;
+	overflow-y:auto;
+	z-index:100;
+}
+
+div.btn_get_info {
+	font-size:30px;
+	font-weight:bold;
+	margin:20px;
+	margin-top:40px;
+	margin-bottom:40px;
+	padding:20px;
+	padding-left:40px;
+	padding-right:40px;
+	border:solid 2px #FFF;
+	border-radius:20px;
+	cursor:pointer;
+	background-color:rgba(30,164,4,1);
+	color:#FFF;
+}
+
+table.system_info {
+	width:100%;
+	padding:10px;
+	margin:0;
+	margin-top:40px;
+	margin-bottom:40px;
+	border-radius:20px;
+}
+td.info_left {
+	width:50%;
+	padding:10px;
+	padding-right:30px;
+	text-align:right;
+}
+td.info_right {
+	width:50%;
+	padding:10px;
+	padding-left:30px;
+	text-align:left;
+}
+
+
